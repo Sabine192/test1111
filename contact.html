@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylecss.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+    <style>
+        [class*="col-"] {
+            width: 100%;
+        }
+
+        @media only screen and (min-width: 768px) {
+            [class*="col-"] {
+                float: left;
+                padding: 15px;
+            }
+            .col-1 {width: 8.33%;}
+            .col-2 {width: 16.66%;}
+            .col-3 {width: 25%;}
+            .col-4 {width: 33.33%;}
+            .col-5 {width: 41.66%;}
+            .col-6 {width: 50%;}
+            .col-7 {width: 58.33%;}
+            .col-8 {width: 66.66%;}
+            .col-9 {width: 75%;}
+            .col-10 {width: 83.33%;}
+            .col-11 {width: 91.66%;}
+            .col-12 {width: 100%;}
+        }
+    </style>
+</head>
+<body class="contact-pagina">
+    <div class="header">
+        <header>
+            <h1>Muziekschool H&J</h1>
+            <p>Luisterend oor <em>voor</em> talent!</p>
+        </header>
+        </div>
+        <div class="nav-container">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Over ons</a></li>
+                    <li><a href="pricing.html">Tarieven</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    </ul><ul>
+                    <li><a href="Blog/5blog.html">Blog</a></li>
+                    <li><a href="/quotes/">Quotes</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+        <main>
+            <div class="row">
+                <div class="col-2">
+                    <section class="adres">
+                    <h2>Adresgegevens</h2>
+<p>Muziekschool H&J<br>
+t.a.v Hannah en Jesse Industrieterrein 37<br>
+5981 NK Panningen<br>
+0123-456789<br>
+muziekschoolhj@inlook.com<br></p>
+</section>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2492.754999266618!2d5.975584676956707!3d51.334026023353715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c7485bd5bc80c3%3A0xc56f3d8c01a8a374!2sIndustrieterrein%20Panningen%2037%2C%205981%20NK%20Panningen!5e0!3m2!1snl!2snl!4v1712741958491!5m2!1snl!2snl" 
+width="320" height="380" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="col-9">
+                <section class="contact">
+                <h2>Contact</h2>
+                <h4>U kunt een bericht achterlaten via onderstaand contactformulier.</h4>
+                </section>
+                <form id="contactform" method="post">
+                    <p>Uw voornaam</p>
+                    <input type="text" name="voornaam" placeholder="Uw voornaam">
+                    
+                    <p>Uw achternaam</p>
+                    <input type="text" name="achternaam" placeholder="Uw achternaam">
+                    
+                    <p>Uw e-mailadres</p>
+                    <input type="text" name="email" placeholder="Uw e-mailadres">
+                    <br>
+                    <br>
+                    <label for="land">Land</label><br>
+                    <select id="land" name="land">
+                      <option value="Nederland">Nederland</option>
+                      <option value="België">België</option>
+                      <option value="Duitsland">Duitsland</option>
+                      <option value="Frankrijk">Frankrijk</option>
+                    </select><br><br>
+                    <td><b>Schrijf uw boodschap</b></td><br>
+                    <td><textarea name="bericht" rows="6" cols="50"  maxlength="1500"></textarea></td>
+                    <input type="submit" value="Verzend">
+                </form>
+                        
+        </div>
+</main>
+<footer>
+    <h5>© Copyright 2021 Muziekschool H&J 
+        (Dit is een oefenopdracht, alle informatie op deze website is fictief.)</h5>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
+
+

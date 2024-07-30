@@ -1,0 +1,206 @@
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background-size: 100%;
+  background-position: center;
+  border-style: double;
+  background-color: rgb(221, 134, 63);
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0, 0.9); 
+  overflow-x: hidden; 
+  transition: 0.5s; 
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%; 
+  width: 100%;
+  text-align: center; 
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block; 
+  transition: 0.3s; 
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.button-menu {
+  border-radius: 4px;
+  background-color: #555;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button-menu span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button-menu span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button-menu:hover span {
+  padding-right: 25px;
+}
+
+.button-menu:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container img {
+  max-width: 100%;
+  max-height: auto;
+  height: 450px;
+  width: 450px;
+  padding-bottom: 10px;
+}
+
+
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: rgb(221, 134, 63);
+  margin-top: 20px;
+  border-style: double;
+}
+
+.hidden {
+  display: none;
+}
+
+#btnToggle {
+  border-radius: 4px;
+  background-color: #555;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px; 
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+#btnToggle:hover {
+  background-color: #333; 
+}
+
+@media only screen and (max-width: 768px) {
+  .header {
+    font-size: 30px;
+    padding: 20px;
+  }
+
+  .overlay a {
+    font-size: 28px;
+  }
+
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 30px;
+  }
+
+  .button-menu {
+    font-size: 24px;
+    padding: 15px;
+    width: 150px;
+  }
+
+  .container img {
+    height: 300px;
+    width: 300px;
+  }
+
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+
+  .footer {
+    font-size: 16px;
+    padding: 15px;
+  }
+}
